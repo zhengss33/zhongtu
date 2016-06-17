@@ -1,0 +1,1286 @@
+<!doctype html>
+<html><head>
+<meta charset="UTF-8">
+<title>中土世界</title>
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<script src="js/jquery-1.12.0.min.js"></script>
+<script src="js/commons.js"></script>
+<script src="js/index.js"></script>
+<script src="js/promoSlider.js"></script>
+</head>
+
+<body>
+    <!--头部banner-->
+    <div class="top" style="background:url(images/top_banner.jpg) no-repeat #c8e7f1 center top"><a href="#"></a></div>
+
+    <!--头部导航-->
+    <div class="topnav_wrap">
+        <div class="topnav" id="top_nav">
+            <ul class="topnav_l">
+                <li>您好！欢迎来到中土世界！</li>
+                <li><a href="#">请登录</a></li>
+                <li class="pipe">|</li>
+                <li><a href="#">快速注册</a></li>
+                <li class="pipe">|</li>
+                <li class="nav-multi-menu">
+                    <a href="#">我的世界<span class="icon_dropdown"></span></a>
+                    <ul class="multi-menu">
+                        <li><a href="#">待处理订单</a></li>
+                        <li><a href="#">我的足迹</a></li>
+                        <li><a href="#">我的收藏</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="topnav_r">
+                <li><a href="#">我的订单</a></li>
+                <li class="pipe">|</li>
+                <li><a href="#">客户服务</a></li>
+                <li class="pipe">|</li>
+                <li>关注我们：</li>
+                <li><a href="#"><span class="weibo"></span>微博</a></li>
+                <li class="topnav_weixin">
+                    <a href="#"><span class="weixin-icon"></span>微信</a>
+                    <div class="topnav_weixin_qrcode"></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!--头部栏目-->
+    <div class="header">
+        <div class="wrap">
+            <div class="logo">
+                <a href="#"><img src="images/logo.png"></a>
+            </div>
+            <ul class="nav">
+                <li><a href="#">首页</a></li>
+                <li><a href="#">纯净世界</a></li>
+                <li><a href="#">中土口碑</a></li>
+            </ul>
+            <form>
+                <input class="hd_search" type="text" value="搜索"><input class="hd_search_btn" type="submit" value="">
+            </form>
+            <div class="shopping_cart"><a href="#">购物车(<span>0</span>)</a></div>
+        </div>
+    </div>
+
+    <!--左侧分类菜单-->
+    <div class="column">
+        <div class="sidebar">
+            <ul class="list1" data-group="1">
+              <li><h1><a href="#"><i></i>母婴用品</a></h1></li>
+              <li><a href="#">蜂胶</a><a href="#">蜂王浆</a><a href="#">蜂皇浆</a></li>
+              <li><a href="#">麦卢卡花系列</a><a href="#">其他系列</a></li>
+          </ul>
+
+          <ul class="list2" data-group="2">
+            <li><h1><i></i><a href="#">蜂蜜蜂胶</a></h1></li>
+            <li><a href="#">蜂胶</a><a href="#">蜂王浆</a><a href="#">蜂皇浆</a></li>
+            <li><a href="#">麦卢卡花系列</a><a href="#">其他系列</a></li>
+        </ul>
+
+        <ul class="list3" data-group="3">
+            <li><h1><a href="#"><i></i>营养健康</a></h1></li>
+            <li><a href="#">蜂胶</a><a href="#">蜂王浆</a><a href="#">蜂皇浆</a></li>
+            <li><a href="#">麦卢卡花系列</a><a href="#">其他系列</a></li>
+        </ul>
+
+        <ul class="list4" data-group="4">
+            <li><h1><a href="#"><i></i>美容护肤</a></h1></li>
+            <li><a href="#">蜂胶</a><a href="#">蜂王浆</a><a href="#">蜂皇浆</a></li>
+            <li><a href="#">麦卢卡花系列</a><a href="#">其他系列</a></li>
+        </ul>
+    </div>
+
+    <div class="dorpdown-layer clearfix">
+        <div class="item-sub" data-index="1">
+            <div class="subitems">
+                <dl class="fore1">
+                    <dt><a href="#">孕妇春装</a></dt>
+                    <dd>
+                        <a href="#">孕妇裤</a> 
+                        <a href="#">月子服</a>
+                        <a href="#">辐射服</a>
+                        <a href="#">待产包</a>
+                        <a href="#">连衣裙</a>
+                        <a href="#">孕妇营养品</a>
+                        <a href="#">孕妇牛仔裤</a>
+                    </dd>
+                </dl>
+
+                <dl class="fore2">
+                    <dt><a href="#">奶粉</a></dt>
+                    <dd>
+                        <a href="#">爱他美</a> 
+                        <a href="#">羊奶粉</a>
+                        <a href="#">喜宝</a>
+                        <a href="#">惠氏</a>
+                        <a href="#">特殊配方奶粉</a>
+                        <a href="#">启赋</a>
+                    </dd>
+                </dl>
+
+                <dl class="fore3">
+                    <dt><a href="#">奶食</a></dt>
+                    <dd>
+                        <a href="#">米粉</a> 
+                        <a href="#">泡芙</a>
+                        <a href="#">溶溶豆</a>
+                        <a href="#">奶片</a>
+                        <a href="#">益生菌</a>
+                        <a href="#">维生素</a>
+                    </dd>
+                </dl>
+
+                <dl class="fore4">
+                    <dt><a href="#">宝宝用品</a></dt>
+                    <dd>
+                        <a href="#">宝宝调料</a> 
+                        <a href="#">奶瓶</a>
+                        <a href="#">餐具</a>
+                        <a href="#">餐椅</a>
+                        <a href="#">暖奶器</a>
+                        <a href="#">宝宝食用油</a>
+                    </dd>
+                </dl>
+
+                <dl class="fore5">
+                    <dt><a href="#">孕产用品</a></dt>
+                    <dd>
+                        <a href="#">隔尿垫</a> 
+                        <a href="#">学步车</a>
+                        <a href="#">安抚奶嘴</a>
+                        <a href="#">体温计</a>
+                        <a href="#">纸尿裤</a>
+                        <a href="#">花王</a>
+                        <a href="#">湿巾</a>
+                    </dd>
+                </dl>
+
+                <dl class="fore6">
+                    <dt><a href="#">孕产用品</a></dt>
+                    <dd>
+                        <a href="#">孕妇裤</a> 
+                        <a href="#">月子服</a>
+                        <a href="#">辐射服</a>
+                        <a href="#">待产包</a>
+                        <a href="#">连衣裙</a>
+                        <a href="#">孕妇营养品</a>
+                        <a href="#">孕妇牛仔裤</a>
+                    </dd>
+                </dl>
+
+                <dl class="fore7">
+                    <dt><a href="#">孕产用品</a></dt>
+                    <dd>
+                        <a href="#">孕妇裤</a> 
+                        <a href="#">月子服</a>
+                        <a href="#">辐射服</a>
+                        <a href="#">待产包</a>
+                        <a href="#">连衣裙</a>
+                        <a href="#">孕妇营养品</a>
+                        <a href="#">孕妇牛仔裤</a>
+                        <a href="#">宝宝调料</a> 
+                        <a href="#">奶瓶</a>
+                        <a href="#">餐具</a>
+                        <a href="#">餐椅</a>
+                        <a href="#">暖奶器</a>
+                        <a href="#">宝宝食用油</a>
+                    </dd>
+                </dl>
+            </div>
+            <div class="item-promotions">
+                <a href="#"><img src="images/guess.png" height="96" width="171"></a>
+                <a href="#"><img src="images/guess.png" height="96" width="171"></a>
+            </div>      
+        </div>
+
+        <div class="item-sub" data-index="2">
+            <div class="subitems">
+                <dl class="fore1">
+                    <dt><a href="#">蜂蜜蜂胶</a></dt>
+                    <dd>
+                        <a href="#">蜂胶</a> 
+                        <a href="#">蜂王浆</a>
+                        <a href="#">蜂皇浆</a>
+                        <a href="#">麦卢卡花系列</a>
+                        <a href="#">蜂胶</a>
+                        <a href="#">蜂王浆</a>
+                        <a href="#">其他系列</a>
+                    </dd>
+                </dl>
+
+                <dl class="fore2">
+                    <dt><a href="#">奶粉</a></dt>
+                    <dd>
+                        <a href="#">爱他美</a> 
+                        <a href="#">羊奶粉</a>
+                        <a href="#">喜宝</a>
+                        <a href="#">惠氏</a>
+                        <a href="#">特殊配方奶粉</a>
+                        <a href="#">启赋</a>
+                    </dd>
+                </dl>
+
+                <dl class="fore4">
+                    <dt><a href="#">蜂蜜蜂胶</a></dt>
+                    <dd>
+                        <a href="#">蜂胶</a> 
+                        <a href="#">蜂王浆</a>
+                        <a href="#">蜂皇浆</a>
+                        <a href="#">麦卢卡花系列</a>
+                        <a href="#">蜂胶</a>
+                        <a href="#">蜂王浆</a>
+                        <a href="#">其他系列</a>
+                    </dd>
+                </dl>
+
+                <dl class="fore4">
+                    <dt><a href="#">宝宝用品</a></dt>
+                    <dd>
+                        <a href="#">宝宝调料</a> 
+                        <a href="#">奶瓶</a>
+                        <a href="#">餐具</a>
+                        <a href="#">餐椅</a>
+                        <a href="#">暖奶器</a>
+                        <a href="#">宝宝食用油</a>
+                    </dd>
+                </dl>
+
+                <dl class="fore5">
+                    <dt><a href="#">孕产用品</a></dt>
+                    <dd>
+                        <a href="#">隔尿垫</a> 
+                        <a href="#">学步车</a>
+                        <a href="#">安抚奶嘴</a>
+                        <a href="#">体温计</a>
+                        <a href="#">纸尿裤</a>
+                        <a href="#">花王</a>
+                        <a href="#">湿巾</a>
+                    </dd>
+                </dl>
+
+                <dl class="fore6">
+                    <dt><a href="#">孕产用品</a></dt>
+                    <dd>
+                        <a href="#">孕妇裤</a> 
+                        <a href="#">月子服</a>
+                        <a href="#">辐射服</a>
+                        <a href="#">待产包</a>
+                        <a href="#">连衣裙</a>
+                        <a href="#">孕妇营养品</a>
+                        <a href="#">孕妇牛仔裤</a>
+                    </dd>
+                </dl>
+
+                <dl class="fore7">
+                    <dt><a href="#">蜂蜜蜂胶</a></dt>
+                    <dd>
+                        <a href="#">蜂胶</a> 
+                        <a href="#">蜂王浆</a>
+                        <a href="#">蜂皇浆</a>
+                        <a href="#">麦卢卡花系列</a>
+                        <a href="#">蜂胶</a>
+                        <a href="#">蜂王浆</a>
+                        <a href="#">其他系列</a>
+                    </dd>
+                </dl>
+            </div>
+            <div class="item-promotions">
+                <a href="#"><img src="images/guess.png" height="96" width="171"></a>
+                <a href="#"><img src="images/guess.png" height="96" width="171"></a>
+            </div>      
+        </div>
+
+        <div class="item-sub" data-index="3">
+            <div class="subitems">
+                <dl class="fore1">
+                    <dt><a href="#">营养保健</a></dt>
+                    <dd>
+                        <a href="#">多维矿物质</a> 
+                        <a href="#">B族维生素</a>
+                        <a href="#">葡萄籽</a>
+                        <a href="#">消化酶</a>
+                        <a href="#">软骨素</a>
+                        <a href="#">维生素C</a>
+                        <a href="#">钙</a>
+                    </dd>
+                </dl>
+
+                <dl class="fore2">
+                    <dt><a href="#">营养</a></dt>
+                    <dd>
+                        <a href="#">益生菌</a> 
+                        <a href="#">生物素</a>
+                        <a href="#">螺旋藻</a>
+                        <a href="#">胶原蛋白</a>
+                        <a href="#">DHA</a>
+                        <a href="#">褪黑素</a>
+                    </dd>
+                </dl>
+
+                <dl class="fore3">
+                    <dt><a href="#">保健</a></dt>
+                    <dd>
+                        <a href="#">益生菌</a> 
+                        <a href="#">生物素</a>
+                        <a href="#">螺旋藻</a>
+                        <a href="#">胶原蛋白</a>
+                        <a href="#">DHA</a>
+                        <a href="#">褪黑素</a>
+                    </dd>
+                </dl>
+
+                <dl class="fore4">
+                    <dt><a href="#">营养</a></dt>
+                    <dd>
+                        <a href="#">多维矿物质</a> 
+                        <a href="#">B族维生素</a>
+                        <a href="#">葡萄籽</a>
+                        <a href="#">消化酶</a>
+                        <a href="#">软骨素</a>
+                        <a href="#">维生素C</a>
+                        <a href="#">钙</a>
+                    </dd>
+                </dl>
+
+                <dl class="fore5">
+                    <dt><a href="#">保健</a></dt>
+                    <dd>
+                        <a href="#">益生菌</a> 
+                        <a href="#">生物素</a>
+                        <a href="#">螺旋藻</a>
+                        <a href="#">胶原蛋白</a>
+                        <a href="#">DHA</a>
+                        <a href="#">褪黑素</a>
+                    </dd>
+                </dl>
+
+                <dl class="fore6">
+                    <dt><a href="#">营养保健</a></dt>
+                    <dd>
+                        <a href="#">多维矿物质</a> 
+                        <a href="#">B族维生素</a>
+                        <a href="#">葡萄籽</a>
+                        <a href="#">消化酶</a>
+                        <a href="#">软骨素</a>
+                        <a href="#">维生素C</a>
+                        <a href="#">钙</a>
+                    </dd>
+                </dl>
+
+                <dl class="fore7">
+                    <dt><a href="#">营养保健</a></dt>
+                    <dd>
+                        <a href="#">益生菌</a> 
+                        <a href="#">生物素</a>
+                        <a href="#">螺旋藻</a>
+                        <a href="#">胶原蛋白</a>
+                        <a href="#">DHA</a>
+                        <a href="#">褪黑素</a>
+                    </dd>
+                </dl>
+
+                <dl class="fore8">
+                    <dt><a href="#">营养保健</a></dt>
+                    <dd>
+                        <a href="#">多维矿物质</a> 
+                        <a href="#">B族维生素</a>
+                        <a href="#">葡萄籽</a>
+                        <a href="#">消化酶</a>
+                        <a href="#">软骨素</a>
+                        <a href="#">维生素C</a>
+                        <a href="#">钙</a>
+                    </dd>
+                </dl>
+            </div>
+            <div class="item-promotions">
+                <a href="#"><img src="images/guess.png" height="96" width="171"></a>
+                <a href="#"><img src="images/guess.png" height="96" width="171"></a>
+            </div>      
+        </div>
+
+        <div class="item-sub" data-index="4">
+            <div class="subitems">
+                <dl class="fore1">
+                    <dt><a href="#">美容护肤</a></dt>
+                    <dd>
+                        <a href="#">洗发水</a> 
+                        <a href="#">护发素</a>
+                        <a href="#">头发造型</a>
+                        <a href="#">染发素</a>
+                        <a href="#">烫发水</a>
+                        <a href="#">假发</a>
+                        <a href="#">沐浴露</a>
+                    </dd>
+                </dl>
+
+                <dl class="fore2">
+                    <dt><a href="#">个人护理</a></dt>
+                    <dd>
+                        <a href="#">牙膏</a> 
+                        <a href="#">牙刷</a>
+                        <a href="#">漱口水</a>
+                        <a href="#">足浴</a>
+                        <a href="#">足贴</a>
+                        <a href="#">洗手液</a>
+                    </dd>
+                </dl>
+
+                <dl class="fore3">
+                    <dt><a href="#">护肤</a></dt>
+                    <dd>
+                        <a href="#">面膜</a> 
+                        <a href="#">洁面</a>
+                        <a href="#">烦晒</a>
+                        <a href="#">眼霜</a>
+                        <a href="#">乳液</a>
+                        <a href="#">精华</a>
+                    </dd>
+                </dl>
+
+                <dl class="fore4">
+                    <dt><a href="#">美妆</a></dt>
+                    <dd>
+                        <a href="#">眼线</a> 
+                        <a href="#">粉底液</a>
+                        <a href="#">BB霜</a>
+                        <a href="#">隔离</a>
+                        <a href="#">睫毛膏</a>
+                        <a href="#">唇膏</a>
+                    </dd>
+                </dl>
+
+                <dl class="fore5">
+                    <dt><a href="#">护理</a></dt>
+                    <dd>
+                        <a href="#">香水</a> 
+                        <a href="#">精油</a>
+                        <a href="#">身体护理</a>
+                        <a href="#">丰胸</a>
+                        <a href="#">纤体</a>
+                        <a href="#">脱毛</a>
+                        <a href="#">海外直邮</a>
+                    </dd>
+                </dl>
+
+                <dl class="fore6">
+                    <dt><a href="#">美容护肤</a></dt>
+                    <dd>
+                        <a href="#">洗发水</a> 
+                        <a href="#">护发素</a>
+                        <a href="#">头发造型</a>
+                        <a href="#">染发素</a>
+                        <a href="#">烫发水</a>
+                        <a href="#">假发</a>
+                        <a href="#">沐浴露</a>
+                    </dd>
+                </dl>
+
+                <dl class="fore7">
+                    <dt><a href="#">个人护理</a></dt>
+                    <dd>
+                        <a href="#">牙膏</a> 
+                        <a href="#">牙刷</a>
+                        <a href="#">漱口水</a>
+                        <a href="#">足浴</a>
+                        <a href="#">足贴</a>
+                        <a href="#">洗手液</a>
+                    </dd>
+                </dl>
+
+                <dl class="fore8">
+                    <dt><a href="#">护肤</a></dt>
+                    <dd>
+                        <a href="#">面膜</a> 
+                        <a href="#">洁面</a>
+                        <a href="#">烦晒</a>
+                        <a href="#">眼霜</a>
+                        <a href="#">乳液</a>
+                        <a href="#">精华</a>
+                    </dd>
+                </dl>
+
+                <dl class="fore9">
+                    <dt><a href="#">美妆</a></dt>
+                    <dd>
+                        <a href="#">眼线</a> 
+                        <a href="#">粉底液</a>
+                        <a href="#">BB霜</a>
+                        <a href="#">隔离</a>
+                        <a href="#">睫毛膏</a>
+                        <a href="#">唇膏</a>
+                    </dd>
+                </dl>
+
+                <dl class="fore10">
+                    <dt><a href="#">护理</a></dt>
+                    <dd>
+                        <a href="#">香水</a> 
+                        <a href="#">精油</a>
+                        <a href="#">身体护理</a>
+                        <a href="#">丰胸</a>
+                        <a href="#">纤体</a>
+                        <a href="#">脱毛</a>
+                        <a href="#">海外直邮</a>
+                    </dd>
+                </dl>
+
+            </div>
+            <div class="item-promotions">
+                <a href="#"><img src="images/guess.png" height="96" width="171"></a>
+                <a href="#"><img src="images/guess.png" height="96" width="171"></a>
+            </div>      
+        </div>
+    </div>
+
+    <!--中间banner-->  
+    <div class="banner">
+        <div class="promo J_promo">
+            <ul class="promo-main">
+                <li class="promo-panel banner-item"><a href="#"><img src="images/banner.png"></a></li>
+                <li class="promo-panel banner-item"><a href="#"><img src="images/banner.png"></a></li>
+                <li class="promo-panel banner-item"><a href="#"><img src="images/banner.png"></a></li>
+                <li class="promo-panel banner-item"><a href="#"><img src="images/banner.png"></a></li>
+            </ul>
+            <div class="promo-extra">
+                <ul class="promo-nav">
+                    <li class="promo-item promo-select"></li>
+                    <li class="promo-item"></li>
+                    <li class="promo-item"></li>
+                    <li class="promo-item"></li>
+                </ul>
+                <div class="promo-page">
+                    <a class="promo-prev" href="#"><</a>
+                    <a class="promo-next" href="#">></a>
+                </div>
+            </div>            
+        </div>
+    </div>
+
+    <script>
+        $(function(){
+            $(".J_promo").promoSlider(
+                options = {
+                    "width": 760,
+                    "height": 380,
+                    "speed": 500,
+                    "autoPlay": true,
+                    "delay": 3000,
+                }
+                );
+        });
+    </script>
+
+    <!--右侧公告-->   
+    <div class="right_side">
+        <div class="notice">
+            <div class="wrap">
+                <h1><a href="#">中土公告</a></h1>
+                <ul>
+                    <li><a href="#">中土世界新上品牌专长热卖</a></li>
+                    <li><a href="#">新上品牌热卖中土世界</a></li>
+                    <li><a href="#">热卖婴幼儿商品优惠啦</a></li>
+                    <li><a href="#">中土世界新上品牌专长热卖</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="side_column">
+            <a href="#"><img src="images/side_banner.jpg"></a>
+        </div>
+    </div>
+</div>
+
+
+<!--右热销商品--> 
+<div class="hotsell">
+    <h2><a href="#">热销商品</a></h2>
+    <div class="promo J_promo02 wrap">
+        <div class="promo-main">
+            <div class="promo-panel">
+                <a href="#">
+                    <dl class="hotsell-item">
+                        <dt><img src="images/list1.jpg"></dt>
+                        <dd>帕氏亚麻篮奇异果面部护理套装</dd>
+                        <dd>
+                            <span class="hotsell-item-price">￥50.00</span>
+                            <span class="hotsell-item-express">运费：0.00</span>
+                        </dd>
+                    </dl>
+                </a>
+
+                <a href="#">
+                    <dl class="hotsell-item">
+                        <dt><img src="images/list2.jpg"></dt>
+                        <dd>帕氏亚麻篮奇异果面部护理套装</dd>
+                        <dd>
+                            <span class="hotsell-item-price">￥50.00</span>
+                            <span class="hotsell-item-express">运费：0.00</span>
+                        </dd>
+                    </dl>
+                </a>
+                
+                <a href="#">
+                    <dl class="hotsell-item">
+                        <dt><img src="images/list3.jpg"></dt>
+                        <dd>帕氏亚麻篮奇异果面部护理套装</dd>
+                        <dd>
+                            <span class="hotsell-item-price">￥50.00</span>
+                            <span class="hotsell-item-express">运费：0.00</span>
+                        </dd>
+                    </dl>
+                </a>
+                
+                <a href="#">
+                    <dl class="hotsell-item">
+                        <dt><img src="images/list4.jpg"></dt>
+                        <dd>帕氏亚麻篮奇异果面部护理套装</dd>
+                        <dd>
+                            <span class="hotsell-item-price">￥50.00</span>
+                            <span class="hotsell-item-express">运费：0.00</span>
+                        </dd>
+                    </dl>
+                </a>
+                
+                <a href="#">
+                    <dl class="hotsell-item">
+                        <dt><img src="images/list5.jpg"></dt>
+                        <dd>帕氏亚麻篮奇异果面部护理套装</dd>
+                        <dd>
+                            <span class="hotsell-item-price">￥50.00</span>
+                            <span class="hotsell-item-express">运费：0.00</span>
+                        </dd>
+                    </dl>
+                </a>
+            </div>
+
+            <div class="promo-panel">
+                <a href="#">
+                    <dl class="hotsell-item">
+                        <dt><img src="images/list1.jpg"></dt>
+                        <dd>帕氏亚麻篮奇异果面部护理套装</dd>
+                        <dd>
+                            <span class="hotsell-item-price">￥50.00</span>
+                            <span class="hotsell-item-express">运费：0.00</span>
+                        </dd>
+                    </dl>
+                </a>
+
+                <a href="#">
+                    <dl class="hotsell-item">
+                        <dt><img src="images/list2.jpg"></dt>
+                        <dd>帕氏亚麻篮奇异果面部护理套装</dd>
+                        <dd>
+                            <span class="hotsell-item-price">￥50.00</span>
+                            <span class="hotsell-item-express">运费：0.00</span>
+                        </dd>
+                    </dl>
+                </a>
+                
+                <a href="#">
+                    <dl class="hotsell-item">
+                        <dt><img src="images/list3.jpg"></dt>
+                        <dd>帕氏亚麻篮奇异果面部护理套装</dd>
+                        <dd>
+                            <span class="hotsell-item-price">￥50.00</span>
+                            <span class="hotsell-item-express">运费：0.00</span>
+                        </dd>
+                    </dl>
+                </a>
+                
+                <a href="#">
+                    <dl class="hotsell-item">
+                        <dt><img src="images/list4.jpg"></dt>
+                        <dd>帕氏亚麻篮奇异果面部护理套装</dd>
+                        <dd>
+                            <span class="hotsell-item-price">￥50.00</span>
+                            <span class="hotsell-item-express">运费：0.00</span>
+                        </dd>
+                    </dl>
+                </a>
+                
+                <a href="#">
+                    <dl class="hotsell-item">
+                        <dt><img src="images/list5.jpg"></dt>
+                        <dd>帕氏亚麻篮奇异果面部护理套装</dd>
+                        <dd>
+                            <span class="hotsell-item-price">￥50.00</span>
+                            <span class="hotsell-item-express">运费：0.00</span>
+                        </dd>
+                    </dl>
+                </a>
+            </div>
+
+            <div class="promo-panel">
+                <a href="#">
+                    <dl class="hotsell-item">
+                        <dt><img src="images/list1.jpg"></dt>
+                        <dd>帕氏亚麻篮奇异果面部护理套装</dd>
+                        <dd>
+                            <span class="hotsell-item-price">￥50.00</span>
+                            <span class="hotsell-item-express">运费：0.00</span>
+                        </dd>
+                    </dl>
+                </a>
+
+                <a href="#">
+                    <dl class="hotsell-item">
+                        <dt><img src="images/list2.jpg"></dt>
+                        <dd>帕氏亚麻篮奇异果面部护理套装</dd>
+                        <dd>
+                            <span class="hotsell-item-price">￥50.00</span>
+                            <span class="hotsell-item-express">运费：0.00</span>
+                        </dd>
+                    </dl>
+                </a>
+                
+                <a href="#">
+                    <dl class="hotsell-item">
+                        <dt><img src="images/list3.jpg"></dt>
+                        <dd>帕氏亚麻篮奇异果面部护理套装</dd>
+                        <dd>
+                            <span class="hotsell-item-price">￥50.00</span>
+                            <span class="hotsell-item-express">运费：0.00</span>
+                        </dd>
+                    </dl>
+                </a>
+                
+                <a href="#">
+                    <dl class="hotsell-item">
+                        <dt><img src="images/list4.jpg"></dt>
+                        <dd>帕氏亚麻篮奇异果面部护理套装</dd>
+                        <dd>
+                            <span class="hotsell-item-price">￥50.00</span>
+                            <span class="hotsell-item-express">运费：0.00</span>
+                        </dd>
+                    </dl>
+                </a>
+                
+                <a href="#">
+                    <dl class="hotsell-item">
+                        <dt><img src="images/list5.jpg"></dt>
+                        <dd>帕氏亚麻篮奇异果面部护理套装</dd>
+                        <dd>
+                            <span class="hotsell-item-price">￥50.00</span>
+                            <span class="hotsell-item-express">运费：0.00</span>
+                        </dd>
+                    </dl>
+                </a>
+            </div>
+</div>
+<div class="promo-extra">
+    <div class="promo-page">
+        <a class="promo-prev" href="#"><</a>
+        <a class="promo-next" href="#">></a>
+    </div>
+</div>  
+</div>
+</div>
+
+<script>
+    $(function(){
+        $(".J_promo02").promoSlider(
+            options = {
+                "width": 1200,
+                "height": 256,
+                "speed": 500,
+                "autoPlay": true,
+                "delay": 5000,
+            }
+            );
+    });
+</script>
+
+<!--分类名称--> 
+<div class="category">
+    <h2><a href="#">分类名称</a></h2>
+    <div class="category_list">
+        <a href="#"><img src="images/right_banner.jpg"></a>
+        <ul>
+            <li><a href="#">Nutricia</a></li>
+            <li><a href="#">Active</a></li>
+            <li><a href="#">Nutricia</a></li>
+            <li><a href="#">Active</a></li>
+        </ul>
+
+        <ul>
+            <li><a href="#">Karicare</a></li>
+            <li><a href="#">可瑞康</a></li>
+            <li><a href="#">AnchorBio</a></li>
+            <li><a href="#">可瑞康</a></li>
+        </ul>
+
+        <ul>
+            <li><a href="#">Nutricia</a></li>
+            <li><a href="#">爱他美安佳</a></li>
+            <li><a href="#">AnchorBio</a></li>
+            <li><a href="#">Active</a></li>
+        </ul> 
+    </div>
+
+    <div class="category_content">
+        <a href="#">
+            <dl class="category_item">
+                <dt><img src="images/img1.jpg"></dt>
+                <dd>爱他美 Aptamil 金装2段12个月</dd>
+                <dd>婴儿奶粉</dd>
+                <dd><span>￥89.00</span></dd>
+            </dl>
+        </a>
+
+        <a href="#">
+            <dl class="category_item">            
+                <dt><img src="images/img2.jpg"></dt>
+                <dd>爱他美 Aptamil 金装2段12个月</dd>
+                <dd>婴儿奶粉</dd>
+                <dd><span>￥89.00</span></dd>
+            </dl>
+        </a>
+        
+        <a href="#">
+            <dl class="category_item">
+                <dt><img src="images/img3.jpg"></dt>
+                <dd>爱他美 Aptamil 金装2段12个月</dd>
+                <dd>婴儿奶粉/dd>
+                <dd><span>￥89.00</span></dd>
+            </dl>
+        </a>
+
+        <a href="#">
+            <dl class="category_item">
+                <dt><img src="images/img4.jpg"></dt>
+                <dd>爱他美 Aptamil 金装2段12个月</dd>
+                <dd>婴儿奶粉</dd>
+                <dd><span>￥89.00</span></dd>
+            </dl>
+        </a>
+
+        <a href="#">
+            <dl class="category_item">
+                <dt><img src="images/img1.jpg"></dt>
+                <dd>爱他美 Aptamil 金装2段12个月</dd>
+                <dd>婴儿奶粉</dd>
+                <dd><span>￥89.00</span></dd>
+            </dl>
+        </a>
+
+        <a href="#">
+            <dl class="category_item">
+                <dt><img src="images/img2.jpg"></dt>
+                <dd>爱他美 Aptamil 金装2段12个月></dd>
+                <dd>婴儿奶粉</dd>
+                <dd><span>￥89.00</span></dd>          
+            </dl>
+        </a>
+
+        <a href="#">
+            <dl class="category_item">
+                <dt><img src="images/img3.jpg"></dt>
+                <dd>爱他美 Aptamil 金装2段12个月</dd>
+                <dd>婴儿奶粉<</dd>
+                <dd><span>￥89.00</span></dd>
+            </dl>
+        </a>
+        
+        <a href="#">
+            <dl class="category_item">
+                <dt><img src="images/img4.jpg"></dt>
+                <dd>爱他美 Aptamil 金装2段12个月</dd>
+                <dd>婴儿奶粉</dd>
+                <dd><span>￥89.00</span></dd>
+            </dl>
+        </a>
+    </div>
+</div>
+
+<div class="category">
+    <h2><a href="#">分类名称</a></h2>
+    <div class="category_list">
+        <a href="#"><img src="images/right_banner.jpg"></a>
+        <ul>
+            <li><a href="#">Nutricia</a></li>
+            <li><a href="#">Active</a></li>
+            <li><a href="#">Nutricia</a></li>
+            <li><a href="#">Active</a></li>
+        </ul>
+
+        <ul>
+            <li><a href="#">Karicare</a></li>
+            <li><a href="#">可瑞康</a></li>
+            <li><a href="#">AnchorBio</a></li>
+            <li><a href="#">可瑞康</a></li>
+        </ul>
+
+        <ul>
+            <li><a href="#">Nutricia</a></li>
+            <li><a href="#">爱他美安佳</a></li>
+            <li><a href="#">AnchorBio</a></li>
+            <li><a href="#">Active</a></li>
+        </ul> 
+    </div>
+
+    <div class="category_content">
+        <a href="#">
+            <dl class="category_item">
+                <dt><img src="images/img1.jpg"></dt>
+                <dd>爱他美 Aptamil 金装2段12个月</dd>
+                <dd>婴儿奶粉</dd>
+                <dd><span>￥89.00</span></dd>
+            </dl>
+        </a>
+
+        <a href="#">
+            <dl class="category_item">            
+                <dt><img src="images/img2.jpg"></dt>
+                <dd>爱他美 Aptamil 金装2段12个月</dd>
+                <dd>婴儿奶粉</dd>
+                <dd><span>￥89.00</span></dd>
+            </dl>
+        </a>
+        
+        <a href="#">
+            <dl class="category_item">
+                <dt><img src="images/img3.jpg"></dt>
+                <dd>爱他美 Aptamil 金装2段12个月</dd>
+                <dd>婴儿奶粉/dd>
+                <dd><span>￥89.00</span></dd>
+            </dl>
+        </a>
+
+        <a href="#">
+            <dl class="category_item">
+                <dt><img src="images/img4.jpg"></dt>
+                <dd>爱他美 Aptamil 金装2段12个月</dd>
+                <dd>婴儿奶粉</dd>
+                <dd><span>￥89.00</span></dd>
+            </dl>
+        </a>
+
+        <a href="#">
+            <dl class="category_item">
+                <dt><img src="images/img1.jpg"></dt>
+                <dd>爱他美 Aptamil 金装2段12个月</dd>
+                <dd>婴儿奶粉</dd>
+                <dd><span>￥89.00</span></dd>
+            </dl>
+        </a>
+
+        <a href="#">
+            <dl class="category_item">
+                <dt><img src="images/img2.jpg"></dt>
+                <dd>爱他美 Aptamil 金装2段12个月></dd>
+                <dd>婴儿奶粉</dd>
+                <dd><span>￥89.00</span></dd>        
+            </dl>
+        </a>
+
+        <a href="#">
+            <dl class="category_item">
+                <dt><img src="images/img3.jpg"></dt>
+                <dd>爱他美 Aptamil 金装2段12个月</dd>
+                <dd>婴儿奶粉<</dd>
+                <dd><span>￥89.00</span></dd>
+            </dl>
+        </a>
+        
+        <a href="#">
+            <dl class="category_item">
+                <dt><img src="images/img4.jpg"></dt>
+                <dd>爱他美 Aptamil 金装2段12个月</dd>
+                <dd>婴儿奶粉</dd>
+                <dd><span>￥89.00</span></dd>
+            </dl>
+        </a>
+    </div>
+</div>
+
+<div class="category">
+    <h2><a href="#">分类名称</a></h2>
+    <div class="category_list">
+        <a href="#"><img src="images/right_banner.jpg"></a>
+        <ul>
+            <li><a href="#">Nutricia</a></li>
+            <li><a href="#">Active</a></li>
+            <li><a href="#">Nutricia</a></li>
+            <li><a href="#">Active</a></li>
+        </ul>
+
+        <ul>
+            <li><a href="#">Karicare</a></li>
+            <li><a href="#">可瑞康</a></li>
+            <li><a href="#">AnchorBio</a></li>
+            <li><a href="#">可瑞康</a></li>
+        </ul>
+
+        <ul>
+            <li><a href="#">Nutricia</a></li>
+            <li><a href="#">爱他美安佳</a></li>
+            <li><a href="#">AnchorBio</a></li>
+            <li><a href="#">Active</a></li>
+        </ul> 
+    </div>
+
+    <div class="category_content">
+        <a href="#">
+            <dl class="category_item">
+                <dt><img src="images/img1.jpg"></dt>
+                <dd>爱他美 Aptamil 金装2段12个月</dd>
+                <dd>婴儿奶粉</dd>
+                <dd><span>￥89.00</span></dd>
+            </dl>
+        </a>
+
+        <a href="#">
+            <dl class="category_item">            
+                <dt><img src="images/img2.jpg"></dt>
+                <dd>爱他美 Aptamil 金装2段12个月</dd>
+                <dd>婴儿奶粉</dd>
+                <dd><span>￥89.00</span></dd>
+            </dl>
+        </a>
+        
+        <a href="#">
+            <dl class="category_item">
+                <dt><img src="images/img3.jpg"></dt>
+                <dd>爱他美 Aptamil 金装2段12个月</dd>
+                <dd>婴儿奶粉/dd>
+                <dd><span>￥89.00</span></dd>
+            </dl>
+        </a>
+
+        <a href="#">
+            <dl class="category_item">
+                <dt><img src="images/img4.jpg"></dt>
+                <dd>爱他美 Aptamil 金装2段12个月</dd>
+                <dd>婴儿奶粉</dd>
+                <dd><span>￥89.00</span></dd>
+            </dl>
+        </a>
+
+        <a href="#">
+            <dl class="category_item">
+                <dt><img src="images/img1.jpg"></dt>
+                <dd>爱他美 Aptamil 金装2段12个月</dd>
+                <dd>婴儿奶粉</dd>
+                <dd><span>￥89.00</span></dd>
+            </dl>
+        </a>
+
+        <a href="#">
+            <dl class="category_item">
+                <dt><img src="images/img2.jpg"></dt>
+                <dd>爱他美 Aptamil 金装2段12个月></dd>
+                <dd>婴儿奶粉</dd>
+                <dd><span>￥89.00</span></dd>         
+            </dl>
+        </a>
+
+        <a href="#">
+            <dl class="category_item">
+                <dt><img src="images/img3.jpg"></dt>
+                <dd>爱他美 Aptamil 金装2段12个月</dd>
+                <dd>婴儿奶粉<</dd>
+                <dd><span>￥89.00</span></dd>
+            </dl>
+        </a>
+        
+        <a href="#">
+            <dl class="category_item">
+                <dt><img src="images/img4.jpg"></dt>
+                <dd>爱他美 Aptamil 金装2段12个月</dd>
+                <dd>婴儿奶粉</dd>
+                <dd><span>￥89.00</span></dd>
+            </dl>
+        </a>
+    </div>
+</div>
+
+
+<div class="category">
+    <h2><a href="#">分类名称</a></h2>
+    <div class="category_list">
+        <a href="#"><img src="images/right_banner.jpg"></a>
+        <ul>
+            <li><a href="#">Nutricia</a></li>
+            <li><a href="#">Active</a></li>
+            <li><a href="#">Nutricia</a></li>
+            <li><a href="#">Active</a></li>
+        </ul>
+
+        <ul>
+            <li><a href="#">Karicare</a></li>
+            <li><a href="#">可瑞康</a></li>
+            <li><a href="#">AnchorBio</a></li>
+            <li><a href="#">可瑞康</a></li>
+        </ul>
+
+        <ul>
+            <li><a href="#">Nutricia</a></li>
+            <li><a href="#">爱他美安佳</a></li>
+            <li><a href="#">AnchorBio</a></li>
+            <li><a href="#">Active</a></li>
+        </ul> 
+    </div>
+
+    <div class="category_content">
+        <a href="#">
+            <dl class="category_item">
+                <dt><img src="images/img1.jpg"></dt>
+                <dd>爱他美 Aptamil 金装2段12个月</dd>
+                <dd>婴儿奶粉</dd>
+                <dd><span>￥89.00</span></dd>
+            </dl>
+        </a>
+
+        <a href="#">
+            <dl class="category_item">            
+                <dt><img src="images/img2.jpg"></dt>
+                <dd>爱他美 Aptamil 金装2段12个月</dd>
+                <dd>婴儿奶粉</dd>
+                <dd><span>￥89.00</span></dd>
+            </dl>
+        </a>
+
+        <a href="#">
+            <dl class="category_item">
+                <dt><img src="images/img3.jpg"></dt>
+                <dd>爱他美 Aptamil 金装2段12个月</dd>
+                <dd>婴儿奶粉/dd>
+                <dd><span>￥89.00</span></dd>
+            </dl>
+        </a>
+
+        <a href="#">
+            <dl class="category_item">
+                <dt><img src="images/img4.jpg"></dt>
+                <dd>爱他美 Aptamil 金装2段12个月</dd>
+                <dd>婴儿奶粉</dd>
+                <dd><span>￥89.00</span></dd>
+            </dl>
+        </a>
+
+        <a href="#">
+            <dl class="category_item">
+                <dt><img src="images/img1.jpg"></dt>
+                <dd>爱他美 Aptamil 金装2段12个月</dd>
+                <dd>婴儿奶粉</dd>
+                <dd><span>￥89.00</span></dd>
+            </dl>
+        </a>
+
+        <a href="#">
+            <dl class="category_item">
+                <dt><img src="images/img2.jpg"></dt>
+                <dd>爱他美 Aptamil 金装2段12个月></dd>
+                <dd>婴儿奶粉</dd>
+                <dd><span>￥89.00</span></dd>      
+            </dl>
+        </a>
+
+        <a href="#">
+            <dl class="category_item">
+                <dt><img src="images/img3.jpg"></dt>
+                <dd>爱他美 Aptamil 金装2段12个月</dd>
+                <dd>婴儿奶粉<</dd>
+                <dd><span>￥89.00</span></dd>
+            </dl>
+        </a>
+            
+        <a href="#">
+            <dl class="category_item">
+                <dt><img src="images/img4.jpg"></dt>
+                <dd>爱他美 Aptamil 金装2段12个月</dd>
+                <dd>婴儿奶粉</dd>
+                <dd><span>￥89.00</span></dd>
+            </dl>
+        </a>
+    </div>
+</div>
+
+
+<!--安全保障--> 
+<div class="safe">
+    <div class="wrap">
+        <ul>
+            <li><img src="images/footer_01.png"></li>
+            <li><img src="images/footer_02.png"></li>
+            <li><img src="images/footer_03.png"></li>
+            <li><img src="images/footer_04.png"></li>
+            <li><img src="images/footer_05.png"></li>
+            <li><img src="images/footer_06.png"></li>
+        </ul>
+    </div>
+</div>
+
+
+<!--页尾调用-->
+<div class="footer">
+    <ul>
+        <li><h3>帮助中心</h3></li>
+        <li><a href="#">购物指南</a></li>
+        <li><i></i><a href="#">支付方式</a></li>
+        <li><i></i><a href="#">配送方式</a></li>
+    </ul>
+
+    <ul>
+        <li><h3>阳光通关</h3></li>
+        <li><i></i><a href="#">通光流程</a></li>
+        <li><i></i><a href="#">关税说明</a></li>
+        <li><i></i><a href="#">合作海关</a></li>
+    </ul>
+
+    <ul>
+        <li><h3>售后服务</h3></li>
+        <li><i></i><a href="#">售后政策</a></li>
+        <li><i></i><a href="#">退货说明</a></li>
+        <li><i></i><a href="#">服务热线</a></li>
+    </ul>
+
+    <ul>
+        <li><h3>关于中土</h3></li>
+        <li><i></i><a href="#">了解中土</a></li>
+        <li><i></i><a href="#">加入中土</a></li>
+        <li><i></i><a href="#">联系我们</a></li>
+    </ul>
+
+    <dl class="weibo">
+        <a href="#">
+            <dt><img src="images/weibo.jpg"></dt>
+            <dd><a href="#">新浪微博</a></dd>
+        </a>
+    </dl>
+    <dl class="weixin">
+        <dt><img src="images/weixin.jpg"></dt>
+        <dd>官方微信</dd>
+    </dl>
+</div>
+
+<!--底部--> 
+<div class="bottom">
+    <p>Copyright© 2014 <span><a href="#">中土世界电子商务（北京）有限公司</a></span> PurerMe.com 保留一切权利</p>
+    <p>
+        <span>京ICP备14026027</span>
+        <span>京公网安备：88888888</span>
+        <span>营业执照：110105017222845</span>
+        <span>食品流通许可证：SP1101051410298241（1-1）</span>
+    </p>
+    <p>
+        <img src="images/safe1.png">
+        <img src="images/safe2.png">
+        <img src="images/safe3.png">
+    </p>
+</div>
+
+<!--侧栏 联系方式-->
+<div class="side_contact">
+  <a href="#"><img src="images/message.png"></a>
+  <a href="#"><img src="images/side-weixin.png"></a>
+  <a href="#"><img src="images/side_weibo.png"></a>
+  <a href="#top"><img src="images/top.png"></a>
+</div>
+
+</body>
+</html>

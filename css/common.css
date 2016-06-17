@@ -1,0 +1,21 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,section, article, aside, header, footer, nav, dialog, figure,menu,hgroup,iframe{ margin:0; padding:0; border:0;  font-family:"Microsoft YaHei";}
+ul,li{ list-style:none;}
+img{ border:0; vertical-align:top;}
+input:focus,textarea:focus{ outline:none;}
+body{ background:#fff; font-size:12px; color:#556270; }
+a{ text-decoration:none; color:#556270; -webkit-transition: color 0.2s ease; -moz-transition:color 0.2s ease; -o-transition:color 0.2s ease; -ms-transition: color 0.2s ease;transition: color 0.2s ease;}
+a:hover{ color:#f35305; text-decoration:none;}
+h2{font-size:22px; font-weight:normal; color:#f35305; line-height:48px;}
+h2 a{ text-decoration:none; color:#f35305;}
+
+.clearfix:before,
+.clearfix:after
+{
+    content: " ";
+    display: block;
+} 
+
+.clearfix:after
+{
+    clear: both;
+}
