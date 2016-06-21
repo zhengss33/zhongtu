@@ -1,0 +1,401 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>我的购物车－中土世界</title>
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/cart.css">
+    <script src="js/jquery-1.12.0.min.js"></script>
+    <script src="js/commons.js"></script>
+    <script src="js/jquery.promoSlider.js"></script>
+</head>
+
+<body>
+    <!--头部banner-->
+    <div class="top" style="background:url(images/top_banner.jpg) no-repeat #c8e7f1 center top"><a href="#"></a></div>
+
+    <!--头部导航-->
+    <div class="topnav_wrap">
+        <div class="topnav" id="top_nav">
+            <ul class="topnav_l">
+                <li>您好！欢迎来到中土世界！</li>
+                <li><a href="#">请登录</a></li>
+                <li class="pipe">|</li>
+                <li><a href="#">快速注册</a></li>
+                <li class="pipe">|</li>
+                <li class="nav-multi-menu">
+                    <a href="#">我的世界<span class="icon_dropdown"></span></a>
+                    <ul class="multi-menu">
+                        <li><a href="#">待处理订单</a></li>
+                        <li><a href="#">我的足迹</a></li>
+                        <li><a href="#">我的收藏</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="topnav_r">
+                <li><a href="#">我的订单</a></li>
+                <li class="pipe">|</li>
+                <li><a href="#">客户服务</a></li>
+                <li class="pipe">|</li>
+                <li>关注我们：</li>
+                <li><a href="#"><span class="weibo"></span>微博</a></li>
+                <li class="topnav_weixin">
+                    <a href="#"><span class="weixin-icon"></span>微信</a>
+                    <div class="topnav_weixin_qrcode"></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!--头部logo-->
+    <div class="header">
+        <div class="logo">
+            <a href="#"><h1>中土世界</h1></a>
+        </div>
+    </div>
+
+    <!--订单状态栏-->
+    <div class="state_bar">
+        <ul>
+            <li class="on"><i>1</i>我的购物车</li>
+            <li><i>2</i>填写并核对订单信息</li>
+            <li><i>3</i>支付订单</li>
+        </ul>
+    </div>
+
+
+    <!--购物车信息-->
+    <div class="order_table clearfix">
+        <div class="order_table_th">
+            <div class="th_info">
+                <span class="td_inner">商品图片及名称</span>
+            </div>
+            <div class="th_price">
+                <span class="td_inner">单价(元)</span>
+            </div>
+            <div class="th_amount">
+                <span class="td_inner">数量</span>
+            </div>
+            <div class="th_sum">
+                <span class="td_inner">商品小计</span>
+            </div>
+            <div class="th_fare">
+                <span class="td_inner">运费</span>
+            </div>
+            <div class="th_handle">
+                <span class="td_inner">操作</span>
+            </div>
+        </div>
+        
+        <div class="order_table_tb">
+            <div class="order_table_tr">
+                <div class="tr_info item">
+                    <a href="#">
+                        <div class="tr_info_img"><img src="images/aptam.png"></div>
+                        <div class="tr_info_msg">康维他 强力蜂胶精PFL30不含酒精成分 25毫升</div>  
+                    </a>
+                </div>
+
+                <div class="tr_price item"><span id="J_order_price">50.00</span></div>  
+                <div class="tr_amount item" id="J_order_amount"><span>1</span></div>
+                <div class="tr_sum item" id="J_order_sum"><span>50.00</span></div>
+                <div class="tr_fare item"><span>10.00</span></div>
+                <div class="tr_dell item"><a href="#">删除</a></div>
+            </div>
+
+            <div class="order_table_tr">
+                <div class="tr_info item">
+                    <a href="#">
+                        <div class="tr_info_img"><img src="images/aptam.png"></div>
+                        <div class="tr_info_msg">康维他 强力蜂胶精PFL30不含酒精成分 25毫升</div>  
+                    </a>
+                </div>
+
+                <div class="tr_price item"><span id="J_order_price">50.00</span></div>  
+                <div class="tr_amount item" id="J_order_amount"><span>1</span></div>
+                <div class="tr_sum item" id="J_order_sum"><span>50.00</span></div>
+                <div class="tr_fare item"><span>10.00</span></div>
+                <div class="tr_dell item"><a href="#">删除</a></div>
+            </div>
+
+            <div class="order_table_tr">
+                <div class="tr_info item">
+                    <a href="#">
+                        <div class="tr_info_img"><img src="images/aptam.png"></div>
+                        <div class="tr_info_msg">康维他 强力蜂胶精PFL30不含酒精成分 25毫升</div>  
+                    </a>
+                </div>
+
+                <div class="tr_price item"><span id="J_order_price">50.00</span></div>  
+                <div class="tr_amount item" id="J_order_amount"><span>1</span></div>
+                <div class="tr_sum item" id="J_order_sum"><span>50.00</span></div>
+                <div class="tr_fare item"><span>10.00</span></div>
+                <div class="tr_dell item"><a href="#">删除</a></div>
+            </div>            
+        </div>
+
+        <!--购物车合计-->
+        <div class="order_table_ft">
+            <div class="ft_total">
+                商品合计：<strong id="J_total_price">¥629.00</strong>
+            </div>
+            <div class="ft_btn">
+                <a  class="keep_shopping" href="#"> 继续购物</a>
+                <a  class="pay" id="j_toPay" href="#">结算</a>
+            </div>
+        </div>
+    </div>
+
+<!--猜你喜欢-->
+<div class="guess_like">
+    <h2><a href="#">热销商品</a></h2>
+    <div class="promo J_promo01 wrap">
+        <div class="promo-main">
+            <div class="promo-panel">
+                <a href="#">
+                    <dl class="guess_item">
+                        <dt><img src="images/guess.png"></dt>
+                        <dd>康维他 强力蜂胶精PFL30不含酒精成分</dd>
+                        <dd>
+                            <span class="guess_item_price">￥89.00</span>
+                            <span class="guess_item_sales">已有52人购买</span>
+                        </dd>
+                    </dl>
+                </a>
+
+                <a href="#">
+                    <dl class="guess_item">
+                        <dt><img src="images/guess2.png"></dt>
+                        <dd>康维他 强力蜂胶精PFL30不含酒精成分</dd>
+                        <dd>
+                            <span class="guess_item_price">￥89.00</span>
+                            <span class="guess_item_sales">已有52人购买</span>
+                        </dd>
+                    </dl>
+                </a>
+                
+                <a href="#">
+                    <dl class="guess_item">
+                        <dt><img src="images/guess3.png"></dt>
+                        <dd>康维他 强力蜂胶精PFL30不含酒精成分</dd>
+                        <dd>
+                            <span class="guess_item_price">￥89.00</span>
+                            <span class="guess_item_sales">已有52人购买</span>
+                        </dd>
+                    </dl>
+                </a>
+                
+                <a href="#">
+                    <dl class="guess_item item_last">
+                        <dt><img src="images/guess4.png"></dt>
+                        <dd>康维他 强力蜂胶精PFL30不含酒精成分</dd>
+                        <dd>
+                            <span class="guess_item_price">￥89.00</span>
+                            <span class="guess_item_sales">已有52人购买</span>
+                        </dd>
+                    </dl>
+                </a>
+            </div>
+
+            <div class="promo-panel">
+                <a href="#">
+                    <dl class="guess_item">
+                        <dt><img src="images/guess.png"></dt>
+                        <dd>康维他 强力蜂胶精PFL30不含酒精成分</dd>
+                        <dd>
+                            <span class="guess_item_price">￥89.00</span>
+                            <span class="guess_item_sales">已有52人购买</span>
+                        </dd>
+                    </dl>
+                </a>
+
+                <a href="#">
+                    <dl class="guess_item">
+                        <dt><img src="images/guess2.png"></dt>
+                        <dd>康维他 强力蜂胶精PFL30不含酒精成分</dd>
+                        <dd>
+                            <span class="guess_item_price">￥89.00</span>
+                            <span class="guess_item_sales">已有52人购买</span>
+                        </dd>
+                    </dl>
+                </a>
+                
+                <a href="#">
+                    <dl class="guess_item">
+                        <dt><img src="images/guess3.png"></dt>
+                        <dd>康维他 强力蜂胶精PFL30不含酒精成分</dd>
+                        <dd>
+                            <span class="guess_item_price">￥89.00</span>
+                            <span class="guess_item_sales">已有52人购买</span>
+                        </dd>
+                    </dl>
+                </a>
+                
+                <a href="#">
+                    <dl class="guess_item item_last">
+                        <dt><img src="images/guess4.png"></dt>
+                        <dd>康维他 强力蜂胶精PFL30不含酒精成分</dd>
+                        <dd>
+                            <span class="guess_item_price">￥89.00</span>
+                            <span class="guess_item_sales">已有52人购买</span>
+                        </dd>
+                    </dl>
+                </a>
+            </div>
+
+            <div class="promo-panel">
+                <a href="#">
+                    <dl class="guess_item">
+                        <dt><img src="images/guess.png"></dt>
+                        <dd>康维他 强力蜂胶精PFL30不含酒精成分</dd>
+                        <dd>
+                            <span class="guess_item_price">￥89.00</span>
+                            <span class="guess_item_sales">已有52人购买</span>
+                        </dd>
+                    </dl>
+                </a>
+
+                <a href="#">
+                    <dl class="guess_item">
+                        <dt><img src="images/guess2.png"></dt>
+                        <dd>康维他 强力蜂胶精PFL30不含酒精成分</dd>
+                        <dd>
+                            <span class="guess_item_price">￥89.00</span>
+                            <span class="guess_item_sales">已有52人购买</span>
+                        </dd>
+                    </dl>
+                </a>
+                
+                <a href="#">
+                    <dl class="guess_item">
+                        <dt><img src="images/guess3.png"></dt>
+                        <dd>康维他 强力蜂胶精PFL30不含酒精成分</dd>
+                        <dd>
+                            <span class="guess_item_price">￥89.00</span>
+                            <span class="guess_item_sales">已有52人购买</span>
+                        </dd>
+                    </dl>
+                </a>
+                
+                <a href="#">
+                    <dl class="guess_item item_last">
+                        <dt><img src="images/guess4.png"></dt>
+                        <dd>康维他 强力蜂胶精PFL30不含酒精成分</dd>
+                        <dd>
+                            <span class="guess_item_price">￥89.00</span>
+                            <span class="guess_item_sales">已有52人购买</span>
+                        </dd>
+                    </dl>
+                </a>
+            </div>
+        </div>
+        <div class="promo-extra">
+    <div class="promo-page">
+        <a class="promo-prev" href="#"><</a>
+        <a class="promo-next" href="#">></a>
+    </div>
+        </div>  
+    </div>
+</div>
+
+<script>
+    $(function(){
+        $(".J_promo01").promoSlider(
+            options = {
+                "width": 980,
+                "height": 215,
+                "speed": 500,
+                "autoPlay": true,
+                "delay": 3000,
+            }
+            );
+    });
+</script>
+
+<!--安全保障--> 
+<div class="safe">
+    <div class="wrap">
+        <ul>
+            <li><img src="images/footer_01.png"></li>
+            <li><img src="images/footer_02.png"></li>
+            <li><img src="images/footer_03.png"></li>
+            <li><img src="images/footer_04.png"></li>
+            <li><img src="images/footer_05.png"></li>
+            <li><img src="images/footer_06.png"></li>
+        </ul>
+    </div>
+</div>
+
+
+<!--页尾调用-->
+<div class="footer">
+    <ul>
+        <li><h3>帮助中心</h3></li>
+        <li><a href="#">购物指南</a></li>
+        <li><i></i><a href="#">支付方式</a></li>
+        <li><i></i><a href="#">配送方式</a></li>
+    </ul>
+
+    <ul>
+        <li><h3>阳光通关</h3></li>
+        <li><i></i><a href="#">通光流程</a></li>
+        <li><i></i><a href="#">关税说明</a></li>
+        <li><i></i><a href="#">合作海关</a></li>
+    </ul>
+
+    <ul>
+        <li><h3>售后服务</h3></li>
+        <li><i></i><a href="#">售后政策</a></li>
+        <li><i></i><a href="#">退货说明</a></li>
+        <li><i></i><a href="#">服务热线</a></li>
+    </ul>
+
+    <ul>
+        <li><h3>关于中土</h3></li>
+        <li><i></i><a href="#">了解中土</a></li>
+        <li><i></i><a href="#">加入中土</a></li>
+        <li><i></i><a href="#">联系我们</a></li>
+    </ul>
+
+    <dl class="weibo">
+        <a href="#">
+            <dt><img src="images/weibo.jpg"></dt>
+            <dd><a href="#">新浪微博</a></dd>
+        </a>
+    </dl>
+    <dl class="weixin">
+        <dt><img src="images/weixin.jpg"></dt>
+        <dd>官方微信</dd>
+    </dl>
+</div>
+
+<!--底部--> 
+<div class="bottom">
+    <p>Copyright© 2014 <span><a href="#">中土世界电子商务（北京）有限公司</a></span> PurerMe.com 保留一切权利</p>
+    <p>
+        <span>京ICP备14026027</span>
+        <span>京公网安备：88888888</span>
+        <span>营业执照：110105017222845</span>
+        <span>食品流通许可证：SP1101051410298241（1-1）</span>
+    </p>
+    <p>
+        <img src="images/safe1.png">
+        <img src="images/safe2.png">
+        <img src="images/safe3.png">
+    </p>
+</div>
+
+<!--侧栏 联系方式-->
+<div class="elevator" id="j_fixedTool">
+    <a class="elevator-msg" href="#"><i class="iconfont"></i></a>
+    <a class="elevator-weibo" href="#"><i class="iconfont"></i></a>
+    <a class="elevator-weixin" href="javascript:;">
+        <i class="iconfont"></i>
+        <div class="elevator-weixin-box"></div>
+    </a>
+    <a id="J_backtop" class="elevator-top" href="#top" style="display: none"><i class="iconfont"></i></a>
+</div>
+</body>
+</html>

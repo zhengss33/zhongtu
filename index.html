@@ -7,7 +7,7 @@
 <script src="js/jquery-1.12.0.min.js"></script>
 <script src="js/commons.js"></script>
 <script src="js/index.js"></script>
-<script src="js/promoSlider.js"></script>
+<script src="js/jquery.promoSlider.js"></script>
 </head>
 
 <body>
@@ -788,7 +788,7 @@
                 "height": 256,
                 "speed": 500,
                 "autoPlay": true,
-                "delay": 5000,
+                "delay": 3000,
             }
             );
     });
@@ -1275,11 +1275,14 @@
 </div>
 
 <!--侧栏 联系方式-->
-<div class="side_contact">
-  <a href="#"><img src="images/message.png"></a>
-  <a href="#"><img src="images/side-weixin.png"></a>
-  <a href="#"><img src="images/side_weibo.png"></a>
-  <a href="#top"><img src="images/top.png"></a>
+<div class="elevator" id="j_fixedTool">
+    <a class="elevator-msg" href="#"><i class="iconfont"></i></a>
+    <a class="elevator-weibo" href="#"><i class="iconfont"></i></a>
+    <a class="elevator-weixin" href="javascript:;">
+        <i class="iconfont"></i>
+        <div class="elevator-weixin-box"></div>
+    </a>
+    <a id="J_backtop" class="elevator-top" href="#top" style="display: none"><i class="iconfont"></i></a>
 </div>
 
 </body>

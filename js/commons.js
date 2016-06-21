@@ -14,4 +14,24 @@ $(function(){
     }, function() {
         $(this).find(".topnav_weixin_qrcode").hide();
     });
+
+    //当滚动条大于窗口可视区时显示回到顶部按钮
+    $(window).scroll(function(){        
+        if ($(window).scrollTop() > $(window).height()) {
+            $("#J_backtop").show();
+        }else{
+            $("#J_backtop").hide();
+        }
+    });
+    //点击回到顶部
+   $("#J_backtop").click(function(){
+        $("body,html").animate({scrollTop: 0},300);
+        return false;
+    });
+
+    $("#j_fixedTool").find(".elevator-weixin").hover(function(){
+        $(this).find(".elevator-weixin-box").fadeIn("fast");
+    },function(){
+        $(this).find(".elevator-weixin-box").fadeOut("fast");
+    });
 });
