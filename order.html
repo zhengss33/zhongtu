@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>确认订单－中土世界</title>
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/order.css">
+    <script src="js/jquery-1.12.0.min.js"></script>
+    <script src="js/commons.js"></script>
+</head>
+<body>
+    <!--头部banner-->
+    <div class="top" style="background:url(images/top_banner.jpg) no-repeat #c8e7f1 center top"><a href="#"></a></div>
+
+    <!--头部导航-->
+    <div class="topnav_wrap">
+        <div class="topnav" id="top_nav">
+            <ul class="topnav_l">
+                <li>您好！欢迎来到中土世界！</li>
+                <li><a href="#">请登录</a></li>
+                <li class="pipe">|</li>
+                <li><a href="#">快速注册</a></li>
+                <li class="pipe">|</li>
+                <li class="nav-multi-menu">
+                    <a href="#">我的世界<span class="icon_dropdown"></span></a>
+                    <ul class="multi-menu">
+                        <li><a href="#">待处理订单</a></li>
+                        <li><a href="#">我的足迹</a></li>
+                        <li><a href="#">我的收藏</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="topnav_r">
+                <li><a href="#">我的订单</a></li>
+                <li class="pipe">|</li>
+                <li><a href="#">客户服务</a></li>
+                <li class="pipe">|</li>
+                <li>关注我们：</li>
+                <li><a href="#"><span class="weibo"></span>微博</a></li>
+                <li class="topnav_weixin">
+                    <a href="#"><span class="weixin-icon"></span>微信</a>
+                    <div class="topnav_weixin_qrcode"></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!--头部logo-->
+    <div class="header">
+        <div class="logo">
+            <a href="#"><h1>中土世界</h1></a>
+        </div>
+    </div>
+
+    <!--订单状态栏-->
+    <div class="statebar">
+        <ul>
+            <li class="active statebar_cart"><i>1</i>我的购物车</li>
+            <li class="active statebar_confirm"><i>2</i>填写并核对订单信息</li>
+            <li class="statebar_pay"><i>3</i>支付订单</li>
+        </ul>
+    </div>
+
+    <div class="address">
+        <div class="address_title">
+            <h3>收货地址</h3>
+            <a href="#">管理我的收货地址</a>
+        </div>
+        <div class="address_list">
+            <div class="item">
+                <div class="item_inner">
+                <input id="addrId01" type="radio" name="address" checked="checked">
+                    <label for="addrId01">
+                        <ul class="address_info">
+                            <li>陈政<em>18618819582</em></li>
+                            <li>身份证号：<em>110158198405055214</em></li>
+                            <li>北京市海淀区学院路01号<em> 100096</em></li>
+                        </ul>                    
+                    </label>
+                    <a class="address_edit" href="#">编辑</a>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item_inner">
+                    <input id="addrId01" type="radio" name="address">
+                    <label for="addrId01">
+                        <ul class="address_info">
+                            <li>陈政<em>18618819582</em></li>
+                            <li>身份证号：<em>110158198405055214</em></li>
+                            <li>北京市海淀区学院路01号<em> 100096</em></li>
+                        </ul>                    
+                    </label>
+                    <a class="address_edit" href="#">编辑</a>
+                </div>
+            </div>
+        </div>
+        <div class="address_add">
+            <a href="#">添加收货地址</a>
+        </div>
+    </div>
+
+    <div class="order_confirm">
+        <h3>确认订单信息</h3>
+        <div class="order_info">
+            <div class="order_header">
+                <div class="hd_info">
+                    <span class="td_inner">商品图片及名称</span>
+                </div>
+                <div class="hd_price">
+                    <span class="td_inner">单价(元)</span>
+                </div>
+                <div class="hd_amount">
+                    <span class="td_inner">数量</span>
+                </div>
+                <div class="hd_sum">
+                    <span class="td_inner">商品小计</span>
+                </div>
+                <div class="hd_fare">
+                    <span class="td_inner">运费</span>
+                </div>
+            </div>
+            <div class="order_body clearfix">
+                <div class="order_body_tr">
+                    <div class="tr_info item">
+                        <a href="#">
+                            <div class="tr_info_img"><img src="images/aptam.png"></div>
+                            <div class="tr_info_msg">康维他 强力蜂胶精PFL30不含酒精成分 25毫升</div>  
+                        </a>
+                    </div>
+
+                    <div class="tr_price item"><span id="J_order_price">50.00</span></div>  
+                    <div class="tr_amount item" id="J_order_amount"><span>1</span></div>
+                    <div class="tr_sum item" id="J_order_sum"><span>50.00</span></div>
+                    <div class="tr_fare item"><span>10.00</span></div>
+                </div>    
+
+                <div class="order_body_tr">
+                    <div class="tr_info item">
+                        <a href="#">
+                            <div class="tr_info_img"><img src="images/aptam.png"></div>
+                            <div class="tr_info_msg">康维他 强力蜂胶精PFL30不含酒精成分 25毫升</div>  
+                        </a>
+                    </div>
+
+                    <div class="tr_price item"><span id="J_order_price">50.00</span></div>  
+                    <div class="tr_amount item" id="J_order_amount"><span>1</span></div>
+                    <div class="tr_sum item" id="J_order_sum"><span>50.00</span></div>
+                    <div class="tr_fare item"><span>10.00</span></div>
+                </div>
+
+                <div class="order_body_tr">
+                    <div class="tr_info item">
+                        <a href="#">
+                            <div class="tr_info_img"><img src="images/aptam.png"></div>
+                            <div class="tr_info_msg">康维他 强力蜂胶精PFL30不含酒精成分 25毫升</div>  
+                        </a>
+                    </div>
+
+                    <div class="tr_price item"><span id="J_order_price">50.00</span></div>  
+                    <div class="tr_amount item" id="J_order_amount"><span>1</span></div>
+                    <div class="tr_sum item" id="J_order_sum"><span>50.00</span></div>
+                    <div class="tr_fare item"><span>10.00</span></div>
+                </div>                        
+            </div>
+            <div class="order_footer">
+                <div class="ft_total">
+                    商品合计：<strong id="J_total_price">¥629.00</strong>
+                </div>
+                <div class="ft_btn">
+                    <a class="gotopay" id="j_toPay" href="#">去支付</a>
+                </div>                
+            </div>
+        </div>
+    </div>
+
+    <!--安全保障--> 
+    <div class="safe">
+        <div class="wrap">
+            <ul>
+                <li><img src="images/footer_01.png"></li>
+                <li><img src="images/footer_02.png"></li>
+                <li><img src="images/footer_03.png"></li>
+                <li><img src="images/footer_04.png"></li>
+                <li><img src="images/footer_05.png"></li>
+                <li><img src="images/footer_06.png"></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!--页尾调用-->
+    <div class="footer">
+        <ul>
+            <li><h3>帮助中心</h3></li>
+            <li><a href="#">购物指南</a></li>
+            <li><i></i><a href="#">支付方式</a></li>
+            <li><i></i><a href="#">配送方式</a></li>
+        </ul>
+
+        <ul>
+            <li><h3>阳光通关</h3></li>
+            <li><i></i><a href="#">通光流程</a></li>
+            <li><i></i><a href="#">关税说明</a></li>
+            <li><i></i><a href="#">合作海关</a></li>
+        </ul>
+
+        <ul>
+            <li><h3>售后服务</h3></li>
+            <li><i></i><a href="#">售后政策</a></li>
+            <li><i></i><a href="#">退货说明</a></li>
+            <li><i></i><a href="#">服务热线</a></li>
+        </ul>
+
+        <ul>
+            <li><h3>关于中土</h3></li>
+            <li><i></i><a href="#">了解中土</a></li>
+            <li><i></i><a href="#">加入中土</a></li>
+            <li><i></i><a href="#">联系我们</a></li>
+        </ul>
+
+        <dl class="weibo">
+            <a href="#">
+                <dt><img src="images/weibo.jpg"></dt>
+                <dd><a href="#">新浪微博</a></dd>
+            </a>
+        </dl>
+        <dl class="weixin">
+            <dt><img src="images/weixin.jpg"></dt>
+            <dd>官方微信</dd>
+        </dl>
+    </div>
+
+    <!--底部--> 
+    <div class="bottom">
+        <p>Copyright© 2014 <span><a href="#">中土世界电子商务（北京）有限公司</a></span> PurerMe.com 保留一切权利</p>
+        <p>
+            <span>京ICP备14026027</span>
+            <span>京公网安备：88888888</span>
+            <span>营业执照：110105017222845</span>
+            <span>食品流通许可证：SP1101051410298241（1-1）</span>
+        </p>
+        <p>
+            <img src="images/safe1.png">
+            <img src="images/safe2.png">
+            <img src="images/safe3.png">
+        </p>
+    </div>
+
+    <!--侧栏 联系方式-->
+    <div class="elevator" id="j_fixedTool">
+        <a class="elevator-msg" href="#"><i class="iconfont"></i></a>
+        <a class="elevator-weibo" href="#"><i class="iconfont"></i></a>
+        <a class="elevator-weixin" href="javascript:;">
+            <i class="iconfont"></i>
+            <div class="elevator-weixin-box"></div>
+        </a>
+        <a id="J_backtop" class="elevator-top" href="#top" style="display: none"><i class="iconfont"></i></a>
+    </div>
+</body>
+</html>
